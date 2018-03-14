@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-input :msg="massage"> </app-input>
+    <app-input :msg="massage, test" @messChange="massage = $event"> </app-input>
   </div>
 </template>
 
@@ -10,7 +10,8 @@
     export default {
       data() {
         return {
-          massage: 'Testg'
+          massage: 'Test',
+          test: 'massage'
         }
       },
       components: {
